@@ -1,54 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="img/cafe-cat.jpg" alt="cafe-cat">
-            <ul class="nav">
-                <li class="nav__link"><a href="#">Home</a></li>
-                <li class="nav__link"><a href="#">Contacto</a></li>
-                <li class="nav__link"><a href="#">Servicios</a></li>
-                <li class="nav__link"><a href="#">Nosotros</a></li>
-                <li class="nav__link"><a href="#">Productos</a></li>
-                <li class="nav__link"><a href="#">Envios</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="hero-info">
-                <h1>Cafetería inspirada en gatitos</h1>
-                <p>Coffe Cat es un lugar especial para tu disfrute y el de los gatitos.</p>
-                <div class="botones">
-                    <button class="boton">Carta</button>
-                    <button class="boton">Ver más</button>
-                </div>
-            </div>
-            <div class="hero-img">
-                    <img src="img/gatito-3.jpg" alt="gato-card">
-            </div>
-        </section>
-        <section>
-            <div class="hero-info-2">
-                <p>Coffee cat es una cafetería, un lugar especial para tu disfrute y el de los gatitos.
-                    Un espacio totalmente gatificado que también es un punto de adopciones.
-                    Podes venir por un café, deleitarte con nuestras ricas preparaciones, y adoptar un integrante
-                    más para tu familia.
-                    Nos manejamos con reservas anticipadas y horarios estipulados para la tranquilidad de nuestros
-                    michis.
-                    ¡Vení a disfrutar de esta hermosa experiencia y se parte de nuestrxs adoptantes!.</p>
-            </div>
-        </section>
 
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/cafe-cat.jpg" width="80" height="80" alt="cafe-cat">
+    <nav class="navbar">
+      <label for="toggle-menu"> <i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="toggle-menu">
+      <ul class="navbar-list">
+        <li class="nav__link"><a href="#">Home</a></li>
+        <li class="nav__link"><a href="#">Contacto</a></li>
+        <li class="nav__link"><a href="#">Servicios</a></li>
+        <li class="nav__link"><a href="#">Nosotros</a></li>
+        <li class="nav__link"><a href="#">Productos</a></li>
+        <li class="nav__link"><a href="#">Envios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="hero-info">
+        <h1>Cafetería inspirada en gatitos</h1>
+        <p>Coffe Cat es un lugar especial para tu disfrute y el de los gatitos.</p>
+        <div class="botones">
+          <button class="boton">Carta</button>
+          <button class="boton">Ver más</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img/gatito-3.jpg" alt="gato-card">
+      </div>
+    </section>
+    <section>
+      <div class="hero-info-2">
+        <p>Coffee cat es una cafetería, un lugar especial para tu disfrute y el de los gatitos.
+          Un espacio totalmente gatificado que también es un punto de adopciones.
+          Podes venir por un café, deleitarte con nuestras ricas preparaciones, y adoptar un integrante
+          más para tu familia.
+          Nos manejamos con reservas anticipadas y horarios estipulados para la tranquilidad de nuestros
+          michis.
+          ¡Vení a disfrutar de esta hermosa experiencia y se parte de nuestrxs adoptantes!.</p>
+      </div>
+    </section>
+
+
+    <section class="info" id="info">
+      <h2> Elegí los mejores gustos de nuestra carta </h2>
+
+      <div class="info-cards-container">
+
+        <div class="info-card">
+          <img src="./img/taza-de-cafe.png" alt="cafe">
+          <h3>Moccatccino</h3>
+          <p>El mocaccino es una variante del clásico capuchino italiano. Combina los sabores típicos del café, con el
+            dulce de chocolate.</p>
+        </div>
+        <div class="info-card">
+          <img src="./img/taza-de-cafe.png" alt="cafe">
+          <h3>Macatcchiato</h3>
+          <p>Es una bebida con leche a base de espresso, armoniosa para los amantes del espresso que buscan un toque
+            adicional de dulzor y cremosidad de la leche</p>
+        </div>
+        <div class="info-card">
+          <img src="./img/taza-de-cafe.png" alt="cafe">
+          <h3>Caramel Macatcchiato</h3>
+          <p>Caramel Macchiato es una deliciosa mezcla de intenso espresso con cremosa leche y el dulce sabor y textura
+            del caramelo</p>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <h3>Contactanos</h3>
+      <div class="info-footer-container">
+        <div class="info-footer">
+          <div class="info-data">
+            <img class="footer-icon" src="./img/llamada.png"  alt="">
+            <p>1153315114</p>
+          </div>
+          <div class="info-data">
+            <img class="footer-icon" src="./img/email.png" alt="">
+            <p>coffeecatcaba@gmail.com</p>
+          </div>
+          <div class="info-data">
+            <img class="footer-icon" src="./img/hogar.png" alt="">
+            <p>Av Catlandia 5156, Gatitolandia</p>
+          </div>
+        </div>
+        <div class="info-footer">
+          <div class="info-data">
+            <img class="footer-icon" src="./img/llamada.png" alt="">
+            <p>1154345215</p>
+          </div>
+          <div class="info-data">
+            <img class="footer-icon" src="./img/email.png" alt="">
+            <p>Coffeecat@gmail.com</p>
+          </div>
+          <div class="info-data">
+            <img class="footer-icon" src="./img/hogar.png" alt="">
+            <p>Catdevilla 1214, Villa Gatuna</p>
+          </div>
+        </div>
+      </div>
+      <a href="#">
+        <img alt="Instagram Local" width="50" height="50" src="./img/instagram.png">
+      </a> 
+    </div>
+    <div class="footer-img">
+      <img src="./img/coffee-shop.png"  alt="">
+    </div>
+    </footer>
 </body>
 </html>
